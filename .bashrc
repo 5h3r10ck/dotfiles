@@ -3,10 +3,12 @@
 # for examples
 
 # aliases i added :)
-alias up='ip a;python -m SimpleHTTPServer'
+alias up='ip a;python3 -m http.server'
 alias gobusterit='gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u'
-alias nmapit='nmap -sC -sV'
+alias nmapit='nmap -sC -sV -sU'
+alias nmapq='nmap -sV -vvv'
 alias ffufit='ffuf -w /usr/share/wordlists/raft-medium-directories-lowercase.txt -u'
+alias wfuzzit='wfuzz -c -w /usr/share/wordlists/subomains5000.txt --hw 0 -t 100'
 
 # If not running interactively, don't do anything
 case $- in
