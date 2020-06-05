@@ -2,7 +2,14 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# vars i added :)
+export ry=/usr/share/wordlists/rockyou.txt
+export raft=/usr/share/wordlists/raft-medium-directories-lowercase.txt
+export medium=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+export users=/usr/share/wordlists/usernames.txt
+
 # aliases i added :)
+alias openvpnit='sudo openvpn ~/HTB/5h3r10ck.ovpn'
 alias up='ip a;python3 -m http.server'
 alias gobusterit='gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u'
 alias nmapit='nmap -sC -sV -sU'
