@@ -9,6 +9,11 @@ export medium=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 export users=/usr/share/wordlists/usernames.txt
 
 # aliases i added :)
+mkcdir ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
 alias openvpnit='sudo openvpn ~/HTB/5h3r10ck.ovpn'
 alias up='ip a;python3 -m http.server'
 alias gobusterit='gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u'
