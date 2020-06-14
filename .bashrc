@@ -21,6 +21,7 @@ alias nmapit='nmap -sC -sV -sU'
 alias nmapq='nmap -sV -vvv'
 alias ffufit='ffuf -w /usr/share/wordlists/raft-medium-directories-lowercase.txt -u'
 alias wfuzzit='wfuzz -c -w /usr/share/wordlists/subomains5000.txt --hw 0 -t 100'
+alias ghidra='~/Tools/ghidra_9.1.2_PUBLIC/ghidraRun'
 
 # If not running interactively, don't do anything
 case $- in
