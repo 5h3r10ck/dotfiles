@@ -7,6 +7,7 @@ export ry=/usr/share/wordlists/rockyou.txt
 export raft=/usr/share/wordlists/raft-medium-directories-lowercase.txt
 export medium=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 export users=/usr/share/wordlists/usernames.txt
+PATH=$PATH:/home/l33t/.local/bin
 
 # aliases i added :)
 mkcdir ()
