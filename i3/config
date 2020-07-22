@@ -110,7 +110,7 @@ set $ws2 "2: Surf"
 set $ws3 "3: Sublime"
 set $ws4 "4: Discord"
 set $ws5 "5: burp"
-set $ws6 "6" shark"
+set $ws6 "6: ghidra"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9: Notes"
@@ -207,7 +207,6 @@ exec_always setxkbmap -option 'grp:alt_shift_toggle'
 
 exec_always --no-startup-id bash ~/.config/polybar/launch.sh
 
-
 #startUp
 
 
@@ -227,7 +226,7 @@ exec --no-startup-id i3-msg 'workspace $ws1; exec terminator'
 
 #exec --no-startup-id i3-msg 'workspace $ws3; exec xfce4-appfinder' 
 
-exec --no-startup-id i3-msg 'workspace $ws6; exec terminator;
+exec --no-startup-id i3-msg 'workspace $ws6; exec terminator'
 
 #exec --no-startup-id i3-msg 'workspace $ws7; exec terminator;
 
