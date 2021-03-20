@@ -1,28 +1,25 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-
 # vars i added :)
 export ry=/usr/share/wordlists/rockyou.txt
 export raft=/usr/share/wordlists/raft-medium-directories-lowercase.txt
 export medium=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 export users=/usr/share/wordlists/usernames.txt
-PATH=$PATH:/home/l33t/.local/bin
-
+PATH=$PATH:/home/l33t/.local/bin:/home/l33t/go/bin
 # aliases i added :)
 mkcdir ()
 {
     mkdir -p -- "$1" &&
       cd -P -- "$1"
 }
-alias openvpnit='sudo openvpn ~/HTB/5h3r10ck.ovpn'
-alias up='ip a;python3 -m http.server'
+alias ghidra='~/Tools/ghidra_9.1.2_PUBLIC/ghidraRun'
+alias up='ip a;python -m SimpleHTTPServer'
 alias gobusterit='gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u'
 alias nmapit='nmap -sC -sV -sU'
-alias nmapq='nmap -sV -vvv'
 alias ffufit='ffuf -w /usr/share/wordlists/raft-medium-directories-lowercase.txt -u'
-alias wfuzzit='wfuzz -c -w /usr/share/wordlists/subomains5000.txt --hw 0 -t 100'
-alias ghidra='~/Tools/ghidra_9.1.2_PUBLIC/ghidraRun'
+alias openvpnit='sudo openvpn ~/HTB/5h3r10ck.ovpn'
+export ry=/usr/share/wordlists/rockyou.txt
 
 # If not running interactively, don't do anything
 case $- in
@@ -130,4 +127,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-cmatrix
